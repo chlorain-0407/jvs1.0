@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Noto Sans TC', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  .font-mono, .tabular-nums {
+    font-family: 'IBM Plex Mono', 'Noto Sans TC', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* App-wide Font Size Scaling */
+:root {
+  --app-font-scale: 1;
+}
+
+:root[data-text-size="sm"] {
+  --app-font-scale: 0.9;
+  font-size: 14.5px;
+}
+
+:root[data-text-size="md"] {
+  --app-font-scale: 1;
+  font-size: 16px;
+}
+
+:root[data-text-size="lg"] {
+  --app-font-scale: 1.125;
+  font-size: 18px;
+}
+
+:root[data-text-size="xl"] {
+  --app-font-scale: 1.25;
+  font-size: 20px;
+}
+
+.safe-area-pb {
+  padding-bottom: calc(0.5rem + env(safe-area-inset-bottom, 0px));
+}
+

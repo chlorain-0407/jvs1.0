@@ -1,0 +1,8 @@
+{
+  "name": "房仲AI助理",
+  "description": "專為房仲設計的行動工作台，透過 AI 語音轉寫快速建立客戶需求並精準配對物件。",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
