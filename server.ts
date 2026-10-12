@@ -54,7 +54,7 @@ const app = express();
 app.use(express.json({ limit: '25mb' }));
 app.use(cookieParser());
 
-const PORT = 3000;
+const PORT = Number(process.env.PORT || 3000);
 const SESSION_SECRET = process.env.SESSION_SECRET || 'jarvis-realestate-hmac-secret-key-2026';
 
 // ============================================================================
